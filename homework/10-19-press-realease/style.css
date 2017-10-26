@@ -1,0 +1,61 @@
+style.css
+body {
+  font-family: 'Dosis', sans-serif;
+  background-image: url("https://res.cloudinary.com/jkeohan/image/upload/v1465860054/GAbg_faded_aatkni.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-attachment: fixed;
+  background-color: white;
+  line-height: 1.25;
+  font-size: 30px;
+}
+div.GAlogo {
+  max-width: 800px;
+  margin: auto;
+  padding-top: 50px;
+}
+h1 {
+  max-width: 800px;
+  margin: auto;
+  padding-top: 10px;
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+  line-height: 42px;
+  font-size: 42px;
+ }
+h3 {
+  max-width: 800px;
+  padding-top: 20px;
+  margin: auto;
+  font-size: 25px;
+  color: #ed1e3b;
+}
+div.intro{
+  max-width: 800px;
+  margin: auto;
+  font-size: 25px;
+}
+div.cities{
+    max-width: 600px;
+    margin: auto;
+    padding: 0px;
+    line-height: 1.5;
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0px;
+  font-weight: bold;
+  color: #ed1e3b;
+}
+li{
+  display: inline;
+  padding: 20px;
+}
+div.contact {
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+  text-align: center;
+  border-top: 1px dotted #CCCCCC;
+}
