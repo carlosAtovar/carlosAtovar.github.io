@@ -1,0 +1,172 @@
+/*
+Project Name: Relaxr Landing Page
+Client: Relaxr
+Author: carlos a. tovar
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+body {
+  margin: auto;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;  
+}  
+header{
+  background-image: url(http://res.cloudinary.com/jkeohan/image/upload/v1509050166/header_bg_f5pvpn.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  height: 460px;
+  padding: 5px;
+}
+.topcontainer {
+  width: 100%;
+  margin: auto;
+  height: 50px;
+}
+.logo {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  font-size: 42px;
+  font-weight: 800;
+  color: white
+}
+h1 {
+  max-width: 800px;
+  margin: auto;
+  padding: 60px 0px;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 600;
+  color: white
+}
+.buttontop {
+  color: #033048;
+  position: relative;
+  border-radius: 5px;
+  max-width: 300px;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  background-color: #f9e42e;
+}
+main {
+  margin: 0 auto;
+  font-size: 26px;
+  font-weight: 300;
+  color: #606161;
+}
+h2 {
+  padding-top: 40px;
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+  font-size: 42px;
+  font-weight: 600;
+  color: #033048;
+}
+p {
+  padding: 5px;
+  max-width: 800px;
+  margin: auto;
+}
+ul {
+  max-width: 800px;
+  margin: auto;
+  list-style-type: none;
+  padding: 5px 0px 60px 5px;  
+}
+#background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.quotetext {
+  position: absolute; 
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+  color: white;
+}
+.signup{
+    background-color: #f9e42e;
+    height: 120px;
+}
+.buttonbottom {
+  color: white;
+  position: relative;
+  top: 27%;
+  border-radius: 5px;
+  max-width: 300px;
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  background-color: #033048;
+}
+
+.social {
+  background-color: black;
+  height: 300px;
+}
+.logobottom {
+  color: #f9e42e;
+  max-width: 800px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 800;
+}
+#half {
+    display: inline;
+    margin: auto;
+    max-width: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+ }
+.facebook {
+}
+.twitter {
+ padding-left: 40px; 
+}
+footer {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+
