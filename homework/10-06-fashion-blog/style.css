@@ -11,6 +11,8 @@ aside {
 body {
   margin-left: 20px;
   margin-right: 20px;
+  max-width: 1150px;
+  margin: auto;
 }
 .logo {
   padding-left: 10px;
