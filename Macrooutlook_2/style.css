@@ -1,0 +1,148 @@
+*{
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+body {
+   font-family: sans-serif;
+   margin-left: 25px;
+}
+.topcontainer {
+  padding: 15px; 0px;
+  overflow: hidden;
+  border-bottom: 1px solid #CCCCCC;
+  margin-bottom: 15px
+  max-width: 500px;
+}
+#moodyslogo {
+  float: left;
+  display: flex;
+  /*margin-left: 25px;*/
+  width: 225px;
+  height: 72px   
+}
+header ul li {
+  display: inline-block;
+  /*margin: 0 0 0 40px;*/
+  float: right;
+}
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 4px;
+    border-radius: 100%;
+    background-color: #0028a0;
+    transition: background-color .3s ease;
+}
+img {
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.social-icons-holder {
+   float: right;
+   display: flex;
+   align-items: center;
+   /*margin-right: 25px;*/
+   margin-top: 25px;
+}
+
+ 
+#mainmap {
+
+}
+
+#worldmapgdp {
+border: 1px dotted blue; 
+width: 700px; 
+height: 475px; 
+position: relative;
+}
+
+
+
+
+
+/*article, aside, footer {
+  border: 1px solid #888;
+  line-height: 3;
+
+}
+footer {
+  height: 100px;
+}
+
+article, aside {
+  float: left;
+  height: 600px;
+  
+}
+article {
+  margin: 0 20px 20px 0;
+  width: calc(80% - 10px);
+}
+aside {
+  margin-bottom: 20px;
+  width: calc(20% - 10px);
+  
+}
+section {
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+section div {
+  float: left;
+  height: 200px;
+  width: calc(33.33% - (40px/3));
+}
+section div + div {
+  margin-left: 20px;
+}*/
+
+/*@media screen and (max-width:768px) {
+  body {
+  font-size: 20px;
+}
+  article, aside {
+    float: none;
+    width: 100%;
+    }
+  section {
+    margin: 0;
+  }
+  section div {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width:480px) {
+  body {
+  font-size: 12px;
+}
+article, section div, section div + div {
+    float: none;
+    margin: 20px 0;
+    width: 100%;
+}
+  section {
+    margin: 0;
+  }
+  section div {
+    margin-top: 0;
+  }
+  aside {
+    width: 100%;
+  }
+}*/
+
+
+
+
+

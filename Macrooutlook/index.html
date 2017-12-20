@@ -7,14 +7,17 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>GDPMAP</title>
-<script src="datamaps.world.hires.js"></script>
-<script src="datamaps.world.hires.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
 <script src="/datamaps.world.min.js"></script>
+<script src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="datamaps.world.hires.js"></script>
+<script type="text/javascript" src="datamaps.world.hires.min.js"></script>
+<script src="datamaps.world.hires.js"></script>
+<script src="datamaps.world.hires.min.js"></script>
 </head>
 
-<h1> Map test 1</h1>
+<h1> Map test A</h1>
 
 <div id="container" style="position: relative; width: 500px; height: 300px;"></div>
 
@@ -22,16 +25,57 @@
     var map = new Datamap({element: document.getElementById("container")});
 </script> 
 
-
+<script type="text/javascript" src="script.js"></script>
 
 <body>
 
-<h1> Map test 2</h1>
 
-<div id="container"></div>
 
-<script src="datamaps.world.hires.js"></script>
-<script src="datamaps.world.hires.min.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+  <!-- I recommend you host this file on your own, since this will change without warning -->
+  <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
+ 
+ <h1>Map test C</h1>
+
+
+ <div id="container" style="position: relative; width: 100%; max-height: 1800px;"></div>
+      <script>
+       //basic map config with custom fills, mercator projection
+      var map = new Datamap({
+        scope: 'world',
+        element: document.getElementById('container'),
+        projection: 'mercator',
+        height: 600,
+        fills: {
+          defaultFill: '#f0af0a',
+          lt50: 'rgba(0,244,244,0.9)',
+          gt50: 'red'
+        },
+            data: {
+          USA: {fillKey: 'lt50' },
+          RUS: {fillKey: 'lt50' },
+          CAN: {fillKey: 'lt50' },
+          BRA: {fillKey: 'gt50' },
+          ARG: {fillKey: 'gt50'},
+          COL: {fillKey: 'gt50' },
+          AUS: {fillKey: 'gt50' },
+          ZAF: {fillKey: 'gt50' },
+          MAD: {fillKey: 'gt50' }       
+        }
+      })
+
+     map.bubbles([
+       {name: 'Hot', latitude: 21.32, longitude: 5.32, radius: 10, fillKey: 'gt50'},
+       {name: 'Chilly', latitude: -25.32, longitude: 120.32, radius: 18, fillKey: 'lt50'},
+       {name: 'Hot again', latitude: 21.32, longitude: -84.32, radius: 8, fillKey: 'gt50'},
+
+     ], {
+       popupTemplate: function(geo, data) {
+         return "<div class='hoverinfo'>It is " + data.name + "</div>";
+       }
+     });    
+    </script>
 
 </body>
 </html>

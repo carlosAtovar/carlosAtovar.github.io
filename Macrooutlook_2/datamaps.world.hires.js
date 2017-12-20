@@ -1,4 +1,4 @@
-var map = new Datamap({element: document.getElementById("container")});
+var map = new Datamap({element: document.getElementById("worldmapgdp")});
 
 const worldmap = (function() {
   var svg;
@@ -8,10 +8,10 @@ const worldmap = (function() {
 
   var defaultOptions = {
     scope: 'world',
-    responsive: false,
+    responsive: true,
     aspectRatio: 0.5625,
     setProjection: setProjection,
-    projection: 'equirectangular',
+    projection: 'mercator',
     dataType: 'json',
     data: {},
     done: function() {},
