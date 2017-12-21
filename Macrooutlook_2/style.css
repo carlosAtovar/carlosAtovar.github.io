@@ -10,6 +10,7 @@
 body {
    font-family: sans-serif;
    margin-left: 25px;
+   /*background-color: darkgray*/
 }
 .topcontainer {
   padding: 15px; 0px;
@@ -56,11 +57,12 @@ img {
 
  
 #mainmap {
-
+width: 500px; 
+height: 475px; 
 }
 
 #worldmapgdp {
-border: 1px dotted blue; 
+/*border: 1px dotted blue; */
 width: 700px; 
 height: 475px; 
 position: relative;

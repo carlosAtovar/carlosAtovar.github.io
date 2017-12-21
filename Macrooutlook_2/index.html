@@ -1,48 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <html>
-
-
-<head>
-<meta charset="utf-8">
-<meta name="description" content="Moody's text here">
-<title>Global Macro Outlook</title>
-<script src="https://d3js.org/d3.v3.min.js"></script>
-<script src="https://d3js.org/topojson.v1.min.js"></script>
-<script src="datamaps.world.hires.min.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
-
-<!-- <script src="d3-tip.js"></script> -->
-<!-- <script src="http://datamaps.github.io/scripts/0.4.4/datamaps.world.min.js"></script> -->
-</head>
-<header>
-  <div class="topcontainer">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Moody's text here">
+    <title>Moody's Global Macro Outlook</title>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="datamaps.world.hires.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- <script src="d3-tip.js"></script> -->
+  <!-- <script src="http://datamaps.github.io/scripts/0.4.4/datamaps.world.min.js"></script> -->
+  </head>
+  <header>
+    <div class="topcontainer">
         <a href="https://www.moodys.com/" target="_blank" id="moodyslogo"> <img src="https://daks2k3a4ib2z.cloudfront.net/59e915d330dfca0001a851f0/59e916d490983b0001457020_MIS_RGB_Blue.svg" alt="">
         </a>
-      <div class="social-icons-holder">
+    <div class="social-icons-holder">
         <a href="https://www.linkedin.com/company/4873/" target="_blank" data-ix="grow" class="social-icon" style="transition: background-color 0.3s ease 0s, transform 300ms; transform: scaleX(1) scaleY(1);"><img src="https://daks2k3a4ib2z.cloudfront.net/59e915d330dfca0001a851f0/59fcf1328901e00001399f04_linkedin_icon.png">
         </a>
         <a href="https://twitter.com/moodysinvsvc" target="_blank" data-ix="grow" class="social-icon" style="transition: background-color 0.3s ease 0s;"><img src="https://daks2k3a4ib2z.cloudfront.net/59e915d330dfca0001a851f0/59fcf132ba456c00018c612c_twitter_icon.png">
         </a>
+    </div>
+    </div>
+  </header>
+  <body>
+  <h1> Map test A</h1>  
+  <div id="mainmap">
+  <div id="gdpscale">
+        <h3>2018 Real GDP growth forecast</h3>
+        <svg width="425" height="50" class="scale-svg">
+        <g class="scale-wrapper">
+        <g class="scale">
+        <g class="scale-wrapper">
+          <rect class="scale" width="40" height="20" fill="#D9D9D8" x="0"></rect>
+          <rect class="scale" width="40" height="20" fill="#E15426" x="42"></rect>
+          <rect class="scale" width="40" height="20" fill="#FCDA21" x="84"></rect>
+          <rect class="scale" width="40" height="20" fill="#7FCBBA" x="126"></rect>
+          <rect class="scale" width="40" height="20" fill="#009775" x="168"></rect>
+          <rect class="scale" width="40" height="20" fill="#00795D" x="210"></rect>
+          <rect class="scale" width="40" height="20" fill="#273A93" x="252"></rect>
+        </g>
+          <g class="axis-group" transform="translate(0, 35)">
+          <text class="axis-label" x="0">N/A</text>
+          <text class="axis-label" x="36">-1</text>
+          <text class="axis-label" x="80">0</text>
+          <text class="axis-label" x="122">1</text>
+          <text class="axis-label" x="164">2</text>
+          <text class="axis-label" x="206">3</text>
+          <text class="axis-label" x="248">4</text>
+          <text class="axis-label" x="288">5+</text>
+        </svg>
       </div>
-  </div>
- </header>
 
+      <div id="worldmapgdp"></div>
+        <script type="text/javascript" src="scripttwo.js"></script> 
+      </div>
 
+      <div id="gdpcharthorizontal">
+        <iframe src="https://datawrapper.dwcdn.net/MaIny/4/"scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" oallowfullscreen="oallowfullscreen" msallowfullscreen="msallowfullscreen" width="548" height="1057"></iframe>
+      </div>
 
-<body>
-  
-<div id="mainmap">
-<h1> Map test A</h1>
-
-<div id="worldmapgdp"></div>
-<script type="text/javascript" src="scripttwo.js"></script>
-
-</div>
-
-
-<div id="legend"><!-- Legend container --></div>
-
+ 
 
 
 

@@ -9,9 +9,10 @@ var onlyValues = series.map(function(obj){ return obj[1]; });
     var minValue = Math.min.apply(null, onlyValues),
         maxValue = Math.max.apply(null, onlyValues);
 var paletteScale = d3.scale.linear()
-            .domain([0, 2.5, 5.0, 10])
-            .range(["lightgray","#EFEFFF","#02386F","red"]); // blue color
-    series.forEach(function(item){ //
+            .domain([-1,0,1,2,3,4,5,6])
+            .range(["#D9D9D8","#E15426","#FCDA21","#7FCBBA","#009775","#00795D","#273A93"]);
+            
+            series.forEach(function(item){
 var iso = item[0],
                 value = item[1];
         dataset[iso] = { GDP: value, fillColor: paletteScale(value) };
