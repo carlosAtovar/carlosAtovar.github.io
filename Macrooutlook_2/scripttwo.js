@@ -11,7 +11,6 @@ var onlyValues = series.map(function(obj){ return obj[1]; });
 var paletteScale = d3.scale.linear()
             .domain([-1,0,1,2,3,4,5,6])
             .range(["#D9D9D8","#E15426","#FCDA21","#7FCBBA","#009775","#00795D","#273A93"]);
-            
             series.forEach(function(item){
 var iso = item[0],
                 value = item[1];
@@ -19,18 +18,7 @@ var iso = item[0],
     });
 
 
-//new code
 
-var svg = d3.select("#worldmapgdp")
-        // .append("svg")
-        .attr("width", "100%")
-        .append("g");
-
-
-// function sizeChange() {
-//         d3.select("g").attr("transform", "scale(" + $("#container").width()/900 + ")");
-//         $("svg").height($("#container").width()*0.618);
-//     }
 
 new Datamap({
         element: document.getElementById('worldmapgdp'),
