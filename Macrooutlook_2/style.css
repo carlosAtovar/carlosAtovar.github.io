@@ -7,7 +7,6 @@
   clear:both;
 }
 body {
-  /*width: 960px;*/
   font-family: Helvetica; sans-serif;
   font-weight: lighter;
   margin-left: 25px;
@@ -27,15 +26,8 @@ h3{
   font-size: 22px;
   margin: .5em 0px;
 }
-svg{
+svg.scale-svg{
   font-size: 12px
-}
-svg.datamap {
-  width: 100%;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 #datacontainer{
   display: flex;
@@ -71,6 +63,13 @@ header ul li {
   background-color: #0028a0;
   transition: background-color .3s ease;
 }
+p {
+  font-weight: normal;
+  font-size: 11px;
+  font-style: normal;
+  text-decoration: none;
+  color: #888;
+}
 img {
   border: 0;
   max-width: 100%;
@@ -85,26 +84,88 @@ img {
   margin-top: 25px;
 }
 #gdpscale {
-
 }
-
 #mainmap {
   padding-right: 25px;
   border-right: 1px solid #CCCCCC;
   width: 75%;
 }
+/*svg.datamap {
+  /*width: 100%;*/
+  /*height: 800;*/
+/*  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}*/
 #worldmapgdp {
-width: 100%; 
-height: 900px; 
-position: relative;
+  width: 100%; 
+  height: 858px; 
+  position: relative;
+  padding: 0;
+  /*padding-bottom: 100%;*/
 }
+
+
+svg.datamap {
+    position: absolute;
+    /*height: 900px;*/
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
 #gdpcharthorizontal {
-padding-left: 25px;
-width: 25%;
+    padding-left: 25px;
+    width: 25%;
 }
 #gdpchartbubble {
-padding: 25px;
-border-top: 1px solid #CCCCCC;
-border-bottom: 1px solid #CCCCCC;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
 }
+#gdpchartvertical {
+/*  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;*/
+  height: 0px;
+  width: 0px
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row; 
+}
+.footnote{
+  font-weight: normal;
+  font-size: 16px;
+  font-style: normal;
+  text-decoration: none;
+  float: left;
+}
+.moodyslink{
+  text-decoration: none;
+  color: #0088CC;
+}
+
+.buttongreen{
+  border-radius: 5px;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  padding: 10px 5px;
+  width: 320px;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background: #77BC1F;
+  color: #fff;
+  text-decoration: none;
+}
+
+
 
