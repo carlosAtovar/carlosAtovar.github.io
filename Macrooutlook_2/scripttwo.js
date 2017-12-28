@@ -16,35 +16,20 @@ var iso = item[0],
         dataset[iso] = { GDP: value, fillColor: paletteScale(value) };
     });
 
-// d3.select(window).on('resize', resizemap )
-
-// function resizemap(){
-//     d3.select("#worldmapgdp")
-//         .attr(
-//             "style",
-//             "padding-bottom: " + Math.ceil(height * 100 / width) + "%"
-//         )
-//         .append("svg")
-//         .attr("viewBox", "0 0 " + width + " " + height);
-
-// }
-
-// function(){
 new Datamap({
     element: document.getElementById('worldmapgdp'),
     projection: 'mercator',
-       // height: 600,
-    fills: { defaultFill: '#F5F5F5' },
+    fills: { defaultFill: '#D9D9D8' },
     data: dataset,
     geographyConfig: {
-    borderColor: '#DEDEDE',
+    borderColor: '#D9D8D8',
     highlightBorderWidth: 2,
             // don't change color on mouse hover
     highlightFillColor: function(geo) {
-        return geo['fillColor'] || '#F5F5F5';
+        return geo['fillColor'] || '#D9D9D8';
         },
             // only change border
-    highlightBorderColor: '#B7B7B7',
+    highlightBorderColor: '#75787B',
             // show desired information in tooltip
     popupTemplate: function(geo, data) {
                 // don't show tooltip if country don't present in dataset
