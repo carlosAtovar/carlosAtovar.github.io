@@ -86,7 +86,6 @@ img {
 }
 #mainmap {
   padding-right: 25px;
-  
   width: 75%;
   height: 1084px;
 }
@@ -99,7 +98,7 @@ img {
   /*padding-bottom: 100%;*/
 }
 
-#hoverinfo {
+.hoverinfo {
  font-size: 50px; 
 }
 
@@ -206,7 +205,7 @@ display: none;
   padding-right: 0px;
   border-right: 0px solid #CCCCCC;
   width: 100%;
-  height: 507px; 
+  height: auto;
 }
 #datacontainer{
   padding: 25px;
