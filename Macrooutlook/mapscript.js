@@ -29,11 +29,11 @@ var iso = item[0],
 
 // }
 
-// function(){
+
 new Datamap({
     element: document.getElementById('worldmapgdp'),
     projection: 'mercator',
-       // height: 600,
+    height: 600,
     fills: { defaultFill: '#F5F5F5' },
     data: dataset,
     geographyConfig: {
@@ -56,5 +56,5 @@ new Datamap({
                 '</div>'].join('');
             }
         }
-});
-window.onresize = function(){ location.reload(); }
+    });
+
