@@ -105,9 +105,9 @@ img {
 
 svg.datamap {
     display: block;
-    position: absolute;
-    height: auto;
-    width: 120%;
+   /* position: absolute;*/
+    /*height: auto;*/
+    width: 100%;
     left: 0;
     top: 0;
 }

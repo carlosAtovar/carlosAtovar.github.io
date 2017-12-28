@@ -16,6 +16,8 @@ var iso = item[0],
         dataset[iso] = { GDP: value, fillColor: paletteScale(value) };
     });
 
+window.onresize = function(){ location.reload(); }
+
 new Datamap({
     element: document.getElementById('worldmapgdp'),
     projection: 'mercator',
@@ -42,4 +44,6 @@ new Datamap({
             }
         }
 });
-window.onresize = function(){ location.reload(); }
+
+
+// window.onresize = function(){ location.reload(); }
