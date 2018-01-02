@@ -30,14 +30,9 @@ new Datamap({
     highlightFillColor: function(geo) {
         return geo['fillColor'] || '#D9D9D8';
         },
-            // only change border
     highlightBorderColor: '#75787B',
-            // show desired information in tooltip
     popupTemplate: function(geo, data) {
-                // don't show tooltip if country don't present in dataset
-        // if (!data) { return ; }
-                // tooltip content
-        return ['<div class="hoverinfo">',
+    return ['<div class="hoverinfo">',
                 '<strong>', geo.properties.name, '</strong>',
                 '<br>GDP 2018: <strong>', data.GDP, '</strong>',
                 '</div>'].join('');
@@ -46,4 +41,4 @@ new Datamap({
 });
 
 
-// window.onresize = function(){ location.reload(); }
+
